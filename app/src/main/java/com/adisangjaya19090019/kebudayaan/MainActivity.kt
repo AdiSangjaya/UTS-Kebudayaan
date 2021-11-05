@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         recyclerview.adapter = DataAdapter(data, object : DataAdapter.OnClickListener{
             override fun detail(item: DataModel?) {
                 val intent = Intent(this@MainActivity, DetailActivity::class.java)
-                intent.putExtra("gambar", itegit commit -m "first commit"am?.gambar)
+                intent.putExtra("gambar", item?.gambar)
                 intent.putExtra("nama", item?.nama)
                 intent.putExtra("daerah", item?.daerah)
                 intent.putExtra("keterangan", item?.keterangan)
